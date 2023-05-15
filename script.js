@@ -53,7 +53,12 @@ function passei(){
     var segundo = document.getElementById("seg").value;
     var terceiro = document.getElementById("ter").value;
     var quarto = document.getElementById("qua").value;
+    var peso1 = document.getElementById("pespri").value;
+    var peso2 = document.getElementById("pesseg").value;
+    var peso3 = document.getElementById("pester").value;
+    var peso4 = document.getElementById("pesqua").value;
     var frequencia = document.getElementById("fre").value;
+    var pesos = peso1 + peso2 + peso3 + peso4;
 
     if (primeiro > 10 || primeiro < 0){
         document.getElementById("passe").innerHTML = "Insira Notas Validas";
@@ -64,9 +69,15 @@ function passei(){
     } else if (quarto > 10 || quarto < 0){
         document.getElementById("passe").innerHTML = "Insira Notas Validas";
     } else if (frequencia > 100 || frequencia < 0){
-        document.getElementById("passe").innerHTML = "Insira  Frequencia Valida";
+        document.getElementById("passe").innerHTML = "Insira Frequencia Valida";
+    } else if(pesos != 10){
+        document.getElementById("passe").innerHTML = "A soma dos pesos não é 10! <br> Insira um peso valido!";
     } else {
-        var media = (primeiro + segundo + terceiro + quarto)/4;
+        var primNota = primeiro * peso1;
+        var segNota = segundo * peso2;
+        var terNota = terceiro * peso3;
+        var quarNota = quarto * peso4;
+        var media = (primNota + segNota + terNota + quarNota)/10;
 
         if(media >= 6 && frequencia >= 75){
             document.getElementById("passe").innerHTML = "Passou de ano!";
@@ -77,7 +88,7 @@ function passei(){
         } else if(media > 10 && frequencia >= 75){
             document.getElementById("passe").innerHTML = "Conselho";
         } else {
-            document.getElementById("apos").innerHTML = "Insira as notas";
+            document.getElementById("passe").innerHTML = "Insira as notas";
         }
     }
 }
