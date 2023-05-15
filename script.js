@@ -70,7 +70,7 @@ function passei(){
         document.getElementById("passe").innerHTML = "Insira Notas Validas";
     } else if (frequencia > 100 || frequencia < 0){
         document.getElementById("passe").innerHTML = "Insira Frequencia Valida";
-    } else if(pesos != 10){
+    } else if(pesos =! 10){
         document.getElementById("passe").innerHTML = "A soma dos pesos não é 10! <br> Insira um peso valido!";
     } else {
         var primNota = primeiro * peso1;
