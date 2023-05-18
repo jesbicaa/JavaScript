@@ -1,0 +1,95 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #passe{
+    color: #ff0000ec;
+  }  
+
+  .main{
+    background-color: #ffffffec;
+    color: rgb(44, 44, 44);
+    margin:auto;
+    width:90%;
+  }
+
+  .w3-border {
+    border: 1px solid rgb(0, 0, 0) !important;
+  }
+  .w3-container, .w3-panel {
+    padding: 0.01em 16px;
+  }
+  .w3-round-xlarge {
+    border-radius: 16px;
+  }
+
+  .div_no_centro{
+    width: fit-content;
+    margin: auto;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .botao{
+      width:100%;
+    }
+    body{
+      background-color: #225825 !important;
+    }
+  }
+
+  
+  @media only screen and (min-width: 601px) {
+
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    body {
+        /* The image used */
+        background-image: url("../img/passei.webp");
+        background-color: #0f0b08 !important;
+    
+        /* Full height */
+        height: 100%; 
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color:azure;
+    }
+  }
+  
+  input[type=number]{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 100px
+  }
+
+textarea {
+    border: 1px solid #000000;
+    background: #cccccc;
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+}
+
+input[type=number]:hover,
+textarea:hover {
+    background: #ffffff;
+    border: 1px solid #990000;
+}
+
